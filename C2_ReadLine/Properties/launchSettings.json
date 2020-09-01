@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "C2_ReadLine": {
+      "commandName": "Project",
+      "sqlDebugging": true,
+      "nativeDebugging": true
+    }
+  }
+}
