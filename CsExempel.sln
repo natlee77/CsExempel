@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1_WriteLine", "C1_WriteLin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C2_ReadLine", "C2_ReadLine\C2_ReadLine.csproj", "{3300223A-BC61-4E6C-A6E7-F6B1594DD395}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C3_WithAClass", "C3_WithClass\C3_WithAClass.csproj", "{104DE3DE-F22C-44A2-8417-F5491A0F1C69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3300223A-BC61-4E6C-A6E7-F6B1594DD395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3300223A-BC61-4E6C-A6E7-F6B1594DD395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3300223A-BC61-4E6C-A6E7-F6B1594DD395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104DE3DE-F22C-44A2-8417-F5491A0F1C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104DE3DE-F22C-44A2-8417-F5491A0F1C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104DE3DE-F22C-44A2-8417-F5491A0F1C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104DE3DE-F22C-44A2-8417-F5491A0F1C69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
