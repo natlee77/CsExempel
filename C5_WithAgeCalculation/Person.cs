@@ -10,6 +10,7 @@ namespace C5_WithAgeCalculation
         public int Age { get; set; }
         public string City { get; set; }
         public string NameContains { get; set; }
+        public DateTime DateOfBirth { get; set; }
 
 
         public void AskForName()  //public metod- for att nå från Programm
@@ -49,17 +50,37 @@ namespace C5_WithAgeCalculation
                 Console.WriteLine($"oh cool ! we are the same age. I am also {Age} yo.{Name}");
             }
 
+        }      
+        public void AskForDateOfBirth()
+        {
+            Console.WriteLine("When were you born?");
+
+            try
+            {
+                DateOfBirth = Convert.ToDateTime(Console.ReadLine()); // försök convertera - date
+            }
+
+            catch
+            {
+                Console.Write("Sorry man ! I mean yyyy-mm-dd, try again. ");    // catching fel och skriver ut
+                Console.Write("When were you born?");
+
+                try
+                {
+                    DateOfBirth = Convert.ToDateTime(Console.ReadLine()); 
+                }
+                catch
+                {
+                    Console.WriteLine("Are you idiot?");
+                }
+
+            }
+            
         }
 
-        public void AskForNameContains()
+        private int CalculateAge()     // bara for den class
         {
-            Console.WriteLine($"your name contains {Name.Length } characters!");
-        }
-        public void AskForCity()
-        {
-            Console.Write($"{Name} where do you live? ");
-            City = Console.ReadLine();
-            Console.WriteLine($"Nice! My sister live in {City}.");
+            return
         }
     }
 }

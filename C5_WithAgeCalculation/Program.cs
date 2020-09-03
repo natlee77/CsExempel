@@ -6,11 +6,11 @@ namespace C5_WithAgeCalculation
     {
         static void Main(string[] args)
         {
-            var person = new Person();
-            person.AskForName();  // kör funktion från Person.cs-metod AskForName(ask name)
+           var person = new Person();
+
+             
             person.AskForAge();
-            person.AskForNameContains();
-            person.AskForCity();
+           
         }
     }
 }
