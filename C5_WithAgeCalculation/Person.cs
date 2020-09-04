@@ -53,7 +53,7 @@ namespace C5_WithAgeCalculation
         }      
         public void AskForDateOfBirth()
         {
-            Console.WriteLine("When were you born?");
+            Console.Write("When were you born?  ");
 
             try
             {
@@ -63,7 +63,7 @@ namespace C5_WithAgeCalculation
             catch
             {
                 Console.Write("Sorry man ! I mean yyyy-mm-dd, try again. ");    // catching fel och skriver ut
-                Console.Write("When were you born?");
+                Console.Write("When were you born?  ");
 
                 try
                 {
@@ -75,12 +75,18 @@ namespace C5_WithAgeCalculation
                 }
 
             }
-            
+
+            Console.WriteLine($"OO cool , we are the same age I am also {CalculateAge()}");
         }
 
-        private int CalculateAge()     // bara for den class
+        private int CalculateAge()   // bara for den class- funktion calculera older
         {
-            return
+            Age = DateTime.Now.Year - DateOfBirth.Year;
+            if (DateTime.Now.DayOfYear < DateOfBirth.DayOfYear)
+            {                        // om bara en string inte obligatorisk brackets
+                Age = Age - 1;
+            }
+            return Age;
         }
     }
 }

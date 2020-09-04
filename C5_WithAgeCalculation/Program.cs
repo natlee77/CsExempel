@@ -9,7 +9,7 @@ namespace C5_WithAgeCalculation
            var person = new Person();
 
              
-            person.AskForAge();
+            person.AskForDateOfBirth();
            
         }
     }
