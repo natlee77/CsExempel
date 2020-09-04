@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C7_Get_Set_V2", "C7_Get_Set
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C8_Arrays", "C8_Arrays\C8_Arrays.csproj", "{B130A801-6B23-46DF-AF58-404A4D675E55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C9_Listor", "C9_Listor\C9_Listor.csproj", "{C976D5CF-2F6C-4EEF-ADEF-2427E6E24271}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{B130A801-6B23-46DF-AF58-404A4D675E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B130A801-6B23-46DF-AF58-404A4D675E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B130A801-6B23-46DF-AF58-404A4D675E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C976D5CF-2F6C-4EEF-ADEF-2427E6E24271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C976D5CF-2F6C-4EEF-ADEF-2427E6E24271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C976D5CF-2F6C-4EEF-ADEF-2427E6E24271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C976D5CF-2F6C-4EEF-ADEF-2427E6E24271}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
