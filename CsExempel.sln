@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C6_Get_Set", "C6_Get_Set\C6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C7_Get_Set_V2", "C7_Get_Set_V2\C7_Get_Set_V2.csproj", "{CBAF578F-2407-4076-B491-4B070961661B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C8_Arrays", "C8_Arrays\C8_Arrays.csproj", "{B130A801-6B23-46DF-AF58-404A4D675E55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{CBAF578F-2407-4076-B491-4B070961661B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBAF578F-2407-4076-B491-4B070961661B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBAF578F-2407-4076-B491-4B070961661B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B130A801-6B23-46DF-AF58-404A4D675E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B130A801-6B23-46DF-AF58-404A4D675E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B130A801-6B23-46DF-AF58-404A4D675E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B130A801-6B23-46DF-AF58-404A4D675E55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
