@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C2_ReadLine", "C2_ReadLine\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C3_WithAClass", "C3_WithClass\C3_WithAClass.csproj", "{104DE3DE-F22C-44A2-8417-F5491A0F1C69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C4_WithMetods", "C4_WithMetods\C4_WithMetods.csproj", "{4351CA80-D6D7-4D31-B7F4-2E6A5A0766D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C4_WithMetods", "C4_WithMetods\C4_WithMetods.csproj", "{4351CA80-D6D7-4D31-B7F4-2E6A5A0766D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C5_WithAgeCalculation", "C5_WithAgeCalculation\C5_WithAgeCalculation.csproj", "{E8D06013-AA88-4E80-8042-CF33211E26E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C5_WithAgeCalculation", "C5_WithAgeCalculation\C5_WithAgeCalculation.csproj", "{E8D06013-AA88-4E80-8042-CF33211E26E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C6_Get_Set", "C6_Get_Set\C6_Get_Set.csproj", "{EE6920CF-D097-48EE-9400-9AC499D189E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E8D06013-AA88-4E80-8042-CF33211E26E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8D06013-AA88-4E80-8042-CF33211E26E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8D06013-AA88-4E80-8042-CF33211E26E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE6920CF-D097-48EE-9400-9AC499D189E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE6920CF-D097-48EE-9400-9AC499D189E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE6920CF-D097-48EE-9400-9AC499D189E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE6920CF-D097-48EE-9400-9AC499D189E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

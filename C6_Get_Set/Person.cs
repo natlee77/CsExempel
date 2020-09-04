@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace C5_WithAgeCalculation
+namespace C6_Get_Set
 {
     class Person
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public string City { get; set; }
+        public string Name { get; private set; }
+        public int Age  => CalculateAge(); //  read only/if it 1 parameter
+        public string City { get; private set; }
         public string NameContains { get; set; }
-        public DateTime DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; private set; }
 
 
         public void AskForName()  //public metod- for att nå från Programm
@@ -20,37 +20,7 @@ namespace C5_WithAgeCalculation
 
             Console.Write($"{Name} :) Nice  ");
         }
-        public void AskForAge()
-        {
-            Console.Write(" How old are you?  ");
-
-
-            try
-            {
-                Age = Convert.ToInt32(Console.ReadLine()); // försök hear string- int
-            }
-
-            catch
-            {
-                Console.WriteLine("Sorry man ! You must, try again. ");    // catching fel och skriver ut
-                Console.Write("How old are you man ?  ");
-
-                try
-                {
-                    Age = Convert.ToInt32(Console.ReadLine());
-                }
-                catch
-                {
-                    Console.WriteLine("Are you damb?   ");
-                }
-
-            }
-            finally
-            {
-                Console.WriteLine($"oh cool ! we are the same age. I am also {Age} yo.{Name}");
-            }
-
-        }      
+       
         public void AskForDateOfBirth()
         {
             Console.Write("When were you born?  ");
@@ -67,7 +37,7 @@ namespace C5_WithAgeCalculation
 
                 try
                 {
-                    DateOfBirth = Convert.ToDateTime(Console.ReadLine()); 
+                    DateOfBirth = Convert.ToDateTime(Console.ReadLine());
                 }
                 catch
                 {
@@ -76,18 +46,17 @@ namespace C5_WithAgeCalculation
 
             }
 
-            Console.WriteLine($"Ooo! cool , we are the same age I am also {CalculateAge()}");
+            Console.WriteLine($"Ooo! cool , we are the same age I am also {Age}");
         }
-
         private int CalculateAge()   // bara for den class- funktion calculera older
         {
-            Age = DateTime.Now.Year - DateOfBirth.Year;
+            int _age = DateTime.Now.Year - DateOfBirth.Year; // _ (intern  private variable)
             if (DateTime.Now.DayOfYear < DateOfBirth.DayOfYear)
             {                        // om bara en string inte obligatorisk brackets
                 Console.WriteLine(Age);
-                Age = Age - 1;
+                _age = _age - 1;
             }
-            return Age;
+            return _age;
         }
     }
 }
