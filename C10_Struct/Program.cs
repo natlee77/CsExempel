@@ -1,13 +1,24 @@
 ﻿using System;
 
-namespace C3_WithClass
+namespace C10_Struct
 {
+
     class Program
-    {
-        static void Main(string[] args)   //metod
+    { // bygga en struck / på samma sett som vanlig class
+
+
+        struct Person
+        { //  skapa  grupp av  variable
+            public string Name { get; set; }   
+            public int Age { get; set; }     
+            public string City { get; set; }
+        }
+
+
+        static void Main(string[] args)
         {
-           var person  = new Person();    // 2. göra instance utan var class - en tomt object
-                                          //  person.   // after . vi kan se alla avaliable properties-variable
+            //var person = new Person();   - i class 
+            Person person = new Person();
 
             Console.Write("Welcome Dude ! What`s your person.Name?  ");   //göra dialog. fråga nån 
             person.Name = Console.ReadLine();                          // lägger in .Name
@@ -50,5 +61,4 @@ namespace C3_WithClass
             Console.WriteLine($"Nice! My sister live in {person.City} .  ");
         }
     }
-    
 }

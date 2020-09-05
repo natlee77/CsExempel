@@ -26,7 +26,7 @@ namespace C9_Listor
                     break;                                       
             }
 
-            if (!_hasSiblings) //!-om inte lika med false
+            if (!_hasSiblings) //!- inte 
             
                 Console.WriteLine("Okey , Cool! ");
             else
