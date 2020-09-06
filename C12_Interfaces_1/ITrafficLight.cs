@@ -9,7 +9,7 @@ namespace C12_Interfaces_1
         
 
         // implementera olika properties:
-        Guid Id { get; set; }
+        Guid Id { get; set; }  // global idintifacation
         string Location { get; set; }
 
 
