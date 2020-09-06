@@ -30,13 +30,12 @@ namespace C11__Enum
             var _templevel = Level.Normal;
 
 
-            //switch eller If -kan göra 
+            //switch eller If -kan jämföra 
             switch (temperature)  //  olika nivå
             {
                 case var t when t < 10:  //declarera variable( int eller var)
                     _templevel = Level.Low;                   
                     break;
-
                 
                 case var t when t > 30:
                     _templevel = Level.High;                  
@@ -59,7 +58,25 @@ namespace C11__Enum
                     break;
             }
 
-            Console.WriteLine(_templevel);
+            //Console.WriteLine(_templevel);
+
+            var status = Status.Transporting;
+            switch (status)
+            {
+                case Status.Pending:
+                    Console.WriteLine("Electronic information has been received");
+                    break;
+                case Status.Production:
+                    Console.WriteLine("Your product(s) are beeing preperad for shipping");
+                    break;
+                case Status.Transporting:
+                    Console.WriteLine("Your product(s) are in transit");
+                    break;
+                case Status.Delivering:
+                    Console.WriteLine("Your product(s) has been delivered");
+                    break;
+            }
+
         }
     }
 }
