@@ -41,7 +41,7 @@ namespace C10_Struct
     }
 
     // nu vi ska göra nånting med de (CLASS ; STRUCK) för att visa skilnad eller om de identiska
-
+    //skilnd när kör andra gång "DisplayValues"
     class Program
     {
         static void Main(string[] args)
@@ -51,7 +51,7 @@ namespace C10_Struct
 
             classexemple.DisplayValues(); //function som skriver ut värderna
             ModifyValues(classexemple);  //tar och köra" ModifyValues" och skicka in "classexemple"
-
+            classexemple.DisplayValues(); //kör andra gång
 
             Console.WriteLine("\n------------------------------------\n ");
 
@@ -61,6 +61,7 @@ namespace C10_Struct
 
             struckexemple.DisplayValues(); //function som skriver ut värderna
             ModifyValues(struckexemple);
+            struckexemple.DisplayValues(); //2-a gång( samma värde utan modify)
 
 
             Console.ReadKey();
@@ -75,7 +76,16 @@ namespace C10_Struct
 
             Console.WriteLine($"Modifying Values: {d.Nr1}, {d.Nr2}");
         }
+        /* 
+         int Nr1 =1  // ligger  i global
+        function
+        {
+        Nr1 += 1; //local       dvs Nr1 =2
+        }
 
+         
+         
+         */
     }
 }
 
