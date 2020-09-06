@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C9_Listor", "C9_Listor\C9_L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C10_Struct", "C10_Struct\C10_Struct.csproj", "{35AB6526-EEDD-4881-8834-035C379DA9F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C11_ Enum", "C11_ Enum\C11_ Enum.csproj", "{7BD81674-2035-4402-BDC0-AC5EA6907147}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{35AB6526-EEDD-4881-8834-035C379DA9F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35AB6526-EEDD-4881-8834-035C379DA9F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35AB6526-EEDD-4881-8834-035C379DA9F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD81674-2035-4402-BDC0-AC5EA6907147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD81674-2035-4402-BDC0-AC5EA6907147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD81674-2035-4402-BDC0-AC5EA6907147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD81674-2035-4402-BDC0-AC5EA6907147}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
