@@ -6,8 +6,8 @@ namespace C15_Abstract_2.Models
 {
     abstract class Device //ska ha funk.
 
-    {
-      public string CreateFromConnectionString(string connectionstring)
+    { // jag vill ha mojlighet att andra nån "VIRTUAL" -då jag KAN SKRIVA ÖVER
+      public virtual string CreateFromConnectionString(string connectionstring)
         {
             return $"Initializing conection with \"{connectionstring}\"";
         }

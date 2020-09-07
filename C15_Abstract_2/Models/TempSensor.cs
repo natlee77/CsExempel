@@ -7,6 +7,17 @@ namespace C15_Abstract_2.Models
 {
     class TempSensor : Device
     {
+        public override string CreateFromConnectionString(string connectionstring)
+        {// base kommer ifrån 1 v.- !virtual
+
+            var responce= base.CreateFromConnectionString(connectionstring);
+            responce += "-Device connected";
+            return responce;
+        }
+
+
+
+
         public override string ReceiveMessage()
             // override - kan se det är från abstract class, men configureras här
 
