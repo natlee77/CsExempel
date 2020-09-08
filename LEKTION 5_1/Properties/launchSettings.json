@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "LEKTION_5_1": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
