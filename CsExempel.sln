@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C16_WorkerService", "C16_Wo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm1_ContactList", "WinForm1_ContactList\WinForm1_ContactList.csproj", "{309DAB47-C215-48C2-9A33-3CD04B796E3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF1_ContactList", "WPF1_ContactList\WPF1_ContactList.csproj", "{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -419,6 +421,26 @@ Global
 		{309DAB47-C215-48C2-9A33-3CD04B796E3B}.Release|x64.Build.0 = Release|Any CPU
 		{309DAB47-C215-48C2-9A33-3CD04B796E3B}.Release|x86.ActiveCfg = Release|Any CPU
 		{309DAB47-C215-48C2-9A33-3CD04B796E3B}.Release|x86.Build.0 = Release|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Debug|ARM.Build.0 = Debug|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Debug|x64.Build.0 = Debug|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Debug|x86.Build.0 = Debug|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Release|ARM.Build.0 = Release|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Release|ARM64.Build.0 = Release|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Release|x64.ActiveCfg = Release|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Release|x64.Build.0 = Release|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Release|x86.ActiveCfg = Release|Any CPU
+		{EE43EC0C-851D-46F1-83B5-9FBD8636FCDB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
