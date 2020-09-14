@@ -1,0 +1,20 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF3_CustomControl"
+        xmlns:Controls="clr-namespace:WPF3_CustomControl.Controls" x:Class="WPF3_CustomControl.MainWindow"
+        mc:Ignorable="d"
+        Title="Contact List" Height="450" Width="300">
+
+
+    <Grid>
+        <StackPanel x:Name="contactList">
+        <Controls:ContactControl ContactName="Nataliya Lisjö" ContactRole="elev" ContactImage="/s.jpg" />
+        <Controls:ContactControl ContactName="Niklas" ContactRole="elev" ContactImage="/koka-agg-minuter-text-636x768.jpg" />
+        <Controls:ContactControl ContactName="Robert" ContactRole="elev" ContactImage="/DSC00443.JPG" />
+        <Controls:ContactControl ContactName="Anna" ContactRole="elev" ContactImage="/Roshen tree.jpg" />
+        </StackPanel>
+    </Grid>
+</Window>

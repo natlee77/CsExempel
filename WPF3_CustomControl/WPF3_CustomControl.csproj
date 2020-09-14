@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DSC00443.JPG" />
+    <None Remove="Kjelle-recept-EP-8-2_ny.jpg" />
+    <None Remove="koka-agg-minuter-text-636x768.jpg" />
+    <None Remove="Roshen tree.jpg" />
+    <None Remove="s.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="DSC00443.JPG" />
+    <Resource Include="Kjelle-recept-EP-8-2_ny.jpg" />
+    <Resource Include="koka-agg-minuter-text-636x768.jpg" />
+    <Resource Include="Roshen tree.jpg" />
+    <Resource Include="s.jpg" />
+  </ItemGroup>
+
+</Project>
