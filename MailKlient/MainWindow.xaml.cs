@@ -27,7 +27,7 @@ namespace MailKlient
 
         private void btnMessage_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show( "Mail");
         }
 
         private void btnContact_Click(object sender, RoutedEventArgs e)
@@ -46,6 +46,51 @@ namespace MailKlient
         }
 
         private void btnSettings_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnNavigate_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn5_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn6_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn7_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn8_Click(object sender, RoutedEventArgs e)
         {
 
         }
