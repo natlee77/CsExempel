@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF2_Design", "WPF2_Design\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF3_CustomControl", "WPF3_CustomControl\WPF3_CustomControl.csproj", "{C2EDFF82-F268-4554-9FC0-0A395960D1C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailKlient", "MailKlient\MailKlient.csproj", "{F6069DEA-868C-4C80-A14B-3138F21BA6CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -485,6 +487,26 @@ Global
 		{C2EDFF82-F268-4554-9FC0-0A395960D1C1}.Release|x64.Build.0 = Release|Any CPU
 		{C2EDFF82-F268-4554-9FC0-0A395960D1C1}.Release|x86.ActiveCfg = Release|Any CPU
 		{C2EDFF82-F268-4554-9FC0-0A395960D1C1}.Release|x86.Build.0 = Release|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Debug|ARM.Build.0 = Debug|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Debug|x64.Build.0 = Debug|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Debug|x86.Build.0 = Debug|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Release|ARM.Build.0 = Release|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Release|ARM64.Build.0 = Release|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Release|x64.ActiveCfg = Release|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Release|x64.Build.0 = Release|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Release|x86.ActiveCfg = Release|Any CPU
+		{F6069DEA-868C-4C80-A14B-3138F21BA6CB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
