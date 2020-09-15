@@ -6,4 +6,23 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="DSC00442.JPG" />
+    <None Remove="DSC00443.JPG" />
+    <None Remove="iis.png" />
+    <None Remove="Kjelle-recept-EP-8-2_ny.jpg" />
+    <None Remove="koka-agg-minuter-text-636x768.jpg" />
+    <None Remove="Roshen tree.jpg" />
+    <None Remove="s.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="DSC00442.JPG" />
+    <Resource Include="iis.png" />
+    <Resource Include="koka-agg-minuter-text-636x768.jpg" />
+    <Resource Include="s.jpg" />
+  </ItemGroup>
+
+ 
+
 </Project>

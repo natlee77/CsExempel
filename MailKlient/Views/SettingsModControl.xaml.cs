@@ -14,18 +14,13 @@ using System.Windows.Shapes;
 namespace MailKlient.Views
 {
     /// <summary>
-    /// Interaction logic for ContactModControl.xaml
+    /// Interaction logic for SettingsModControl.xaml
     /// </summary>
-    public partial class ContactModControl : UserControl
+    public partial class SettingsModControl : UserControl
     {
-        public ContactModControl()
+        public SettingsModControl()
         {
             InitializeComponent();
-        }
-
-        private void btn1_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

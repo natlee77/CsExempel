@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MailKlient.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MailKlient.Contacts;
+
 namespace MailKlient
 {
     /// <summary>
@@ -23,77 +24,41 @@ namespace MailKlient
         public MainWindow()
         {
             InitializeComponent();
+
+            var contacts = new List<string>() { "Nata", "Niklas", "Anna" };
+            foreach(var contact in contacts)
+            {
+                contactList.Children.Add(new Controls.ContactControl() { ContactName= contact } );
+            }
+            
         }
 
         private void btnMessage_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show( "Mail");
+            DataContext= new MessageMod() ;
         }
 
         private void btnContact_Click(object sender, RoutedEventArgs e)
         {
-            
+            DataContext = new ContactMod();
         }
 
         private void btnCalendar_Click(object sender, RoutedEventArgs e)
         {
-
+            DataContext = new Calendar();
         }
 
         private void btnTask_Click(object sender, RoutedEventArgs e)
         {
-
+            DataContext = new TaskMod();
         }
 
         private void btnSettings_Click(object sender, RoutedEventArgs e)
         {
-
+            DataContext = new SettingsMod();
         }
 
-        private void btnNavigate_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn1_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn2_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn3_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn4_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn5_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn6_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn7_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn8_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
 }  /*   private void ClearFields()
         {

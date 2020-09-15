@@ -7,14 +7,14 @@ namespace C2_ReadLine
         static void Main(string[] args)
         {
             string name = string.Empty ;             //variable decklarerd,( tar minne i ram, decklarera när vi behöver)
-            int age ;
+            int age  ;
 
             Console.Write("Welcome Dude ! What`s your name?  ");   //göra dialog. fråga nån 
             name = Console.ReadLine();                          // lässer en rad tecken
 
 
             Console.Write( $"{name} :) How old are you?  ");
-            // age = Convert.ToInt32(  Console.ReadLine());    //  måste göra convertering string - int 
+             age = Convert.ToInt32(  Console.ReadLine());    //  måste göra convertering string - int 
             // age = int.Parse(Console.ReadLine());    // andra sätt--- likadant
 
 

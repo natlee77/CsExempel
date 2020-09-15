@@ -1,4 +1,4 @@
-﻿<Window x:Class="MailKlient.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,20 +6,27 @@
         xmlns:local="clr-namespace:MailKlient"
         xmlns:models="clr-namespace:MailKlient.Models"
         xmlns:views="clr-namespace:MailKlient.Views"        
+        xmlns:Controls="clr-namespace:MailKlient.Controls" x:Class="MailKlient.MainWindow"        
         mc:Ignorable="d"
-        Title="Mail Klient" Height="550" Width="800" ResizeMode="CanResizeWithGrip" Foreground="#FF0F2211" Background="#FF33621A" FontSize="18" WindowStartupLocation="CenterOwner" >
-
+        Title="Mail Klient" Height="550" Width="900" ResizeMode="CanResizeWithGrip" Foreground="#FF0F2211" Background="#FF33621A" FontSize="18" WindowStartupLocation="CenterOwner" >
     <Window.Resources>
-        <DataTemplate x:Name="ContactViewTemplate" DataType="{x:Type models:ContactMod}">
-            <views:ContactModControl  DataContext="{Binding}"/> 
-        </DataTemplate>
-       
+        <DataTemplate x:Name="ContactModTemplate" DataType="{x:Type models:ContactMod} ">
+            <views:ContactModControl DataContext="{Binding}">
+        <DataTemplate x:Name="MessageModTemplate" DataType="{x:Type models:MessageMod} ">
+             <views:MessageModControl DataContext="{Binding}">
+                <DataTemplate x:Name="CalendarModTemplate" DataType="{x:Type models:CalendarMod} ">
+                    <views: DataContext="{Binding}">
+                                <DataTemplate x:Name="TaskModTemplate" DataType="{x:Type models:TaskMod} ">
+                                    <views:TaskModControl DataContext="{Binding}">
+                                    <DataTemplate x:Name="SettingsModTemplate" DataType="{x:Type models:SettingsMod} ">
+                                        <views:SettingsModControl DataContext="{Binding}"/>
+
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30"  />
-            <ColumnDefinition Width="0.3*" />
-            <ColumnDefinition  Width="0.4*" />
+            <ColumnDefinition Width="0.2*" />
+            <ColumnDefinition  Width="0.3*" />
             <ColumnDefinition Width="0.6*"/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="1" Background="#FF489049" >
@@ -56,29 +63,26 @@
                 </Button>
             </StackPanel>
         </Grid>
-        <Grid x:Name="subMeny_Grid" Grid.Column="2" Background="#FFA3D7A4" >
-            <StackPanel   >
-                <Button x:Name="btnNavigate"  Content="Navigation" Height="120" Background="Transparent" FontSize="26" />
-                <Button x:Name="btn1" Click="btn1_Click" Content="info1" Height="50"  Background="Transparent"/>
-                <Button x:Name="btn2" Click="btn2_Click" Content="info2" Height="50" Background="Transparent"/>
-                <Button x:Name="btn3" Click="btn3_Click" Content="info3" Height="50" Background="Transparent"/>
-                <Button x:Name="btn4" Click="btn4_Click" Content="info4" Height="50" Background="Transparent"/>
-                <Button x:Name="btn5" Click="btn5_Click" Content="info5" Height="50" Background="Transparent"/>
-                <Button x:Name="btn6" Click="btn6_Click" Content="info6" Height="50" Background="Transparent"/>
-                <Button x:Name="btn7" Click="btn7_Click" Content="info7" Height="50" Background="Transparent"/>
-                <Button x:Name="btn8" Click="btn8_Click" Content="info8" Height="50" Background="Transparent"/>
-            </StackPanel> 
+        <Grid x:Name="subMeny_Grid" Grid.Column="2" Background="#FFA3D7A4">
+            <StackPanel x:Name="contactList">
+                <Controls:ContactControl ContactName="Nataliya Lisjö" ContactRole="elev" ContactImage="/s.jpg"  />
+                <Controls:ContactControl ContactName="Niklas" ContactRole="elev" ContactImage="/iis.png" />
+                <Controls:ContactControl ContactName="Robert" ContactRole="elev" ContactImage="/DSC00442.JPG" />
+                <Controls:ContactControl ContactName="Anna" ContactRole="elev" ContactImage="/koka-agg-minuter-text-636x768.jpg" />
+            </StackPanel>
         </Grid>
-        
-        <Grid Grid.Column="3" Background="#FFC6DAC6" Margin="10" >
+
+        <Grid Grid.Column="3" Background="#FFC6DAC6" Margin="5" >
             <TextBlock Padding="10"/>
         </Grid>
 
 
         <ContentControl Grid.Column="2" Content="{Binding}" />
         <ContentControl Grid.Column="3" Content="{Binding}"/>
+
+        
     </Grid>
 
-    
+
 
 </Window>

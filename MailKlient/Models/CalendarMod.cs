@@ -4,7 +4,8 @@ using System.Text;
 
 namespace MailKlient.Models
 {
-    class NavigMessageMod
+    class CalendarMod
     {
+        
     }
 }
