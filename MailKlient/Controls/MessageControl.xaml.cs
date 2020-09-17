@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace MailKlient.Controls
 {
     /// <summary>
-    /// Interaction logic for ContactControl.xaml
+    /// Interaction logic for MessageControl.xaml
     /// </summary>
-    public partial class ContactControl : UserControl
+    public partial class MessageControl : UserControl
     {
-        public ContactControl()
+        public MessageControl()
         {
             InitializeComponent();
         }
@@ -32,12 +32,5 @@ namespace MailKlient.Controls
             get { return contactName.Text; }
             set { contactName.Text = value; }
         }
-        public string ContactRole
-        {
-            get { return contactRole.Text; }
-            set { contactRole.Text = value; }
-        }
-
-       
     }
 }

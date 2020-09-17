@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MailKlient.Controls;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -20,7 +21,14 @@ namespace MailKlient.Views
     {
         public ContactModControl()
         {
+
+        }
+
+        public ContactModControl(object contactList)
+        {
             InitializeComponent();
+            DataContext = new ContactControl();
+            
         }
 
         private void btn1_Click(object sender, RoutedEventArgs e)

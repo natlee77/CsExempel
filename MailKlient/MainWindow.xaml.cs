@@ -1,4 +1,6 @@
-﻿using MailKlient.Models;
+﻿using MailKlient.Controls;
+using MailKlient.Models;
+using MailKlient.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,26 +23,23 @@ namespace MailKlient
     /// </summary>
     public partial class MainWindow : Window
     {
+        public object contactList { get; }
+
         public MainWindow()
         {
             InitializeComponent();
 
-            var contacts = new List<string>() { "Nata", "Niklas", "Anna" };
-            foreach(var contact in contacts)
-            {
-                contactList.Children.Add(new Controls.ContactControl() { ContactName= contact } );
-            }
-            
+           
         }
 
         private void btnMessage_Click(object sender, RoutedEventArgs e)
         {
-            DataContext= new MessageMod() ;
+            DataContext= new MessageControl() ;
         }
 
         private void btnContact_Click(object sender, RoutedEventArgs e)
         {
-            DataContext = new ContactMod();
+            DataContext = new ContactModControl();
         }
 
         private void btnCalendar_Click(object sender, RoutedEventArgs e)

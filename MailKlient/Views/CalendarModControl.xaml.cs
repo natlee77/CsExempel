@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace MailKlient.Views
 {
     /// <summary>
-    /// Interaction logic for NavigContactModControl.xaml
+    /// Interaction logic for CalendarModControl.xaml
     /// </summary>
-    public partial class NavigContactModControl : UserControl
+    public partial class CalendarModControl : UserControl
     {
-        public NavigContactModControl()
+        public CalendarModControl()
         {
             InitializeComponent();
         }

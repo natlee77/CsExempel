@@ -4,24 +4,10 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MailKlient.Views"
+             xmlns:Controls="clr-namespace:MailKlient.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="300">
-    <Grid Background="#FFC6DAC6">
-        
-        <StackPanel x:Name="MessagesList" Grid.Column="0" >
-            <Label  Content="Messages" Height="70" Background="Transparent" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <Button x:Name="btn1"  Content="info1" Height="60"  Background="Transparent"/>
-            <Button x:Name="btn2"  Content="info2" Height="60" Background="Transparent"/>
-            <Button x:Name="btn3"  Content="info3" Height="60" Background="Transparent"/>
-            <Button x:Name="btn4"  Content="info4" Height="60" Background="Transparent"/>
-            <Button x:Name="btn5"  Content="info5" Height="60" Background="Transparent"/>
-            <Button x:Name="btn6"  Content="info6" Height="60" Background="Transparent"/>
-            <Button x:Name="btn7"  Content="info7" Height="60" Background="Transparent"/>
-            <Button x:Name="btn8"  Content="info8" Height="60" Background="Transparent"/>
-        </StackPanel>
-        <Grid Grid.Column="1">
-            <TextBlock />
-            <ContentControl Content="{Binding}"/>
-        </Grid>    
-    </Grid>
+    <Grid Background="#FFC6DAC6"/>
+    
+
 </UserControl>

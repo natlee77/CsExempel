@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace MailKlient.Views
 {
     /// <summary>
-    /// Interaction logic for NavigMessageModControl.xaml
+    /// Interaction logic for TaskModControl.xaml
     /// </summary>
-    public partial class NavigMessageModControl : UserControl
+    public partial class TaskModControl : UserControl
     {
-        public NavigMessageModControl()
+        public  TaskModControl()
         {
             InitializeComponent();
         }

@@ -9,19 +9,26 @@
         xmlns:Controls="clr-namespace:MailKlient.Controls" x:Class="MailKlient.MainWindow"        
         mc:Ignorable="d"
         Title="Mail Klient" Height="550" Width="900" ResizeMode="CanResizeWithGrip" Foreground="#FF0F2211" Background="#FF33621A" FontSize="18" WindowStartupLocation="CenterOwner" >
-    <Window.Resources>
-        <DataTemplate x:Name="ContactModTemplate" DataType="{x:Type models:ContactMod} ">
-            <views:ContactModControl DataContext="{Binding}">
-        <DataTemplate x:Name="MessageModTemplate" DataType="{x:Type models:MessageMod} ">
-             <views:MessageModControl DataContext="{Binding}">
-                <DataTemplate x:Name="CalendarModTemplate" DataType="{x:Type models:CalendarMod} ">
-                    <views: DataContext="{Binding}">
-                                <DataTemplate x:Name="TaskModTemplate" DataType="{x:Type models:TaskMod} ">
-                                    <views:TaskModControl DataContext="{Binding}">
-                                    <DataTemplate x:Name="SettingsModTemplate" DataType="{x:Type models:SettingsMod} ">
-                                        <views:SettingsModControl DataContext="{Binding}"/>
 
+
+    <Window.Resources>
+        <DataTemplate x:Name="ContactModTemplate" DataType="{x:Type models:ContactMod}">
+            <views:ContactModControl DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="MessageModTemplate" DataType="{x:Type models:MessageMod}">
+            <views:MessageModControl DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="CalendarModTemplate" DataType="{x:Type models:CalendarMod}">
+            <views:CalendarModControl DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="TaskModTemplate" DataType="{x:Type models:TaskMod}">
+            <views:TaskModControl DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate x:Name="SettingsModTemplate" DataType="{x:Type models:SettingsMod}">
+            <views:SettingsModControl DataContext="{Binding}"/>
+        </DataTemplate>
     </Window.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30"  />
@@ -30,7 +37,7 @@
             <ColumnDefinition Width="0.6*"/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="1" Background="#FF489049" >
-            <StackPanel Orientation="Vertical" VerticalAlignment="Bottom"      >
+            <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" >
                 <Button x:Name="btnMessage" Click="btnMessage_Click"  HorizontalAlignment="Left" Background="Transparent">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE715;" FontSize="22" />
@@ -63,26 +70,14 @@
                 </Button>
             </StackPanel>
         </Grid>
-        <Grid x:Name="subMeny_Grid" Grid.Column="2" Background="#FFA3D7A4">
-            <StackPanel x:Name="contactList">
-                <Controls:ContactControl ContactName="Nataliya Lisjö" ContactRole="elev" ContactImage="/s.jpg"  />
-                <Controls:ContactControl ContactName="Niklas" ContactRole="elev" ContactImage="/iis.png" />
-                <Controls:ContactControl ContactName="Robert" ContactRole="elev" ContactImage="/DSC00442.JPG" />
-                <Controls:ContactControl ContactName="Anna" ContactRole="elev" ContactImage="/koka-agg-minuter-text-636x768.jpg" />
-            </StackPanel>
+        <Grid x:Name="subMeny_Grid" Grid.Column="2"  Background="#FFA3D7A4">
+            <ContentControl Grid.Column="2" Content="{Binding}" />
+           
         </Grid>
 
         <Grid Grid.Column="3" Background="#FFC6DAC6" Margin="5" >
             <TextBlock Padding="10"/>
-        </Grid>
-
-
-        <ContentControl Grid.Column="2" Content="{Binding}" />
-        <ContentControl Grid.Column="3" Content="{Binding}"/>
-
-        
+            <ContentControl Grid.Column="3" Content="{Binding}"/>
+        </Grid>                
     </Grid>
-
-
-
 </Window>

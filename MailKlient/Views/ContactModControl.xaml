@@ -4,10 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MailKlient.Views"
+              xmlns:Controls="clr-namespace:MailKlient.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="300" >
     <Grid Background="#FFD2DD94">
-       
-        
+        <StackPanel x:Name="contactList" >
+            <Controls:ContactControl ContactName="Nataliya Lisjö" ContactRole="elev" ContactImage="/s.jpg"  />
+            <Controls:ContactControl ContactName="Niklas" ContactRole="elev" ContactImage="/iis.png" />
+            <Controls:ContactControl ContactName="Robert" ContactRole="elev" ContactImage="/DSC00442.JPG" />
+            <Controls:ContactControl ContactName="Anna" ContactRole="elev" ContactImage="/koka-agg-minuter-text-636x768.jpg" />
+        </StackPanel>
+
     </Grid>
 </UserControl>
