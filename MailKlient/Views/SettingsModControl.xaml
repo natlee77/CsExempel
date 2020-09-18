@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:MailKlient.Views"
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="900">
-    <Grid>
+    <Grid Background="#FFC2D1DD">
             
     </Grid>
 </UserControl>

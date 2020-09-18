@@ -71,7 +71,7 @@
             </StackPanel>
         </Grid>
         <Grid x:Name="subMeny_Grid" Grid.Column="2"  Background="#FFA3D7A4">
-            <ContentControl Grid.Column="2" Content="{Binding}" />
+            <ContentControl Grid.Column="2" Content="{Binding }" />
            
         </Grid>
 
