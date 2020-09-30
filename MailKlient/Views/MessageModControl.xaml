@@ -6,8 +6,52 @@
              xmlns:local="clr-namespace:MailKlient.Views"
              xmlns:Controls="clr-namespace:MailKlient.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="550" d:DesignWidth="300">
-    <Grid Background="#FFC6DAC6"/>
-    
+             d:DesignHeight="550" d:DesignWidth="600">
+    <Grid Background="#FFC6DAC6">    
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <Button x:Name="messageButton" Content="Message1" Click="messageButton_Click"/>
+        </StackPanel>
+
+        <Grid Grid.Column="1" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0">
+                <TextBlock x:Name="subject" Text="Subject of the message" FontSize="18" FontWeight="Bold"/>
+            </StackPanel>
+
+            <Grid Grid.Row="1" Margin="0,15,0,15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock x:Name="from" Text="Contact Name (username@domain.com)" />
+                    <TextBlock x:Name="to" Text="to Nataliya Lisjö" FontSize="10"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" >
+                    <StackPanel Orientation="Horizontal">
+                        <Button  x:Name="replaybutton"  Content="Replay"   Margin="5,0"/>                        
+                    </StackPanel>
+                    <TextBlock x:Name="time" Text="ons 8.55" TextAlignment="Right"/>
+                </StackPanel>
+            </Grid>
+            <TextBlock Grid.Row="2" x:Name="body" TextWrapping="Wrap">
+                erhgerkhihvldhvlhfvf
+                gbhkrgrjhkvghnljdf
+                vkjsdhlhflnl,rfjklgf
+            </TextBlock>
+        </Grid>
+    </Grid>
 
 </UserControl>

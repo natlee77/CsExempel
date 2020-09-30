@@ -12,22 +12,23 @@ namespace C16_WorkerService
    public class Worker : BackgroundService  // arv
     {
         //variable:
-        private readonly ILogger<Worker> _logger; // loger till console eller filer
+
+        private readonly ILogger<Worker> _logger; //  funk. som logger till console eller filer
         private readonly string _url = "https://google.com"; //statisk
 
-        private HttpClient _client; // 1. hämta-skicka info-- request-respond// finns variable "client" men inte deklarerad
+        private HttpClient _client; // 1.  class hämta-skicka info-- request-respond// finns variable "client" men inte deklarerad
         private HttpResponseMessage  _result ;//response, få tillbacka svar
 
         public Worker(ILogger<Worker> logger)
         //construktor = har samma namn som Class
-        //()dependency injection ILogger<Worker>--2 st bestå
+        //()dependency injection ILogger<Worker>-  delar--2 st bestå
         {
             _logger = logger;
             
         }
 
 
-        public override Task StartAsync(CancellationToken cancellationToken)
+        public override Task StartAsync(CancellationToken cancellationToken) //metod
             // jag tillagt --starta tjänsten
         {
             _client = new HttpClient();     //deklarera
@@ -52,10 +53,9 @@ namespace C16_WorkerService
          while (!stoppingToken.IsCancellationRequested)
             {//skapa instance
 
-                //client = new HttpClient();
+                //client = new HttpClient();skapa varje gång instanat / flyttad i Async start
                 //deklarera "client"// nackdel-RAMminne -skapa new client varje sec =10000000mln
-                // i <dependence injectin>vi skapa "HttpClient client" i 
-                //ctor"public Worker"==det funkar inte oxså
+                // i <dependence injectin>vi fluttad "HttpClient client" i ctor"public Worker"==det funkar inte oxså
 
              try//altid när vi utföra nån form att handling vi gör try-catch att fänga fel medelande
                // resultat likad oavsett vad

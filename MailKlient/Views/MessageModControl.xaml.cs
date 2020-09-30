@@ -22,5 +22,15 @@ namespace MailKlient.Views
         {
             InitializeComponent();
         }
+
+        private void messageButton_Click(object sender, RoutedEventArgs e)
+        {
+            time.Text = " ond 8.66";
+            subject.Text = " Påminelse";
+            from.Text = "";
+            to.Text = "Nataliya Lisjö";
+            body.Text = "chfyujgiklhlbjhgigkgvhvkhg";
+
+        }
     }
 }

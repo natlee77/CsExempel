@@ -27,9 +27,7 @@ namespace MailKlient
 
         public MainWindow()
         {
-            InitializeComponent();
-
-           
+            InitializeComponent();           
         }
 
         private void btnMessage_Click(object sender, RoutedEventArgs e)
@@ -55,35 +53,6 @@ namespace MailKlient
         private void btnSettings_Click(object sender, RoutedEventArgs e)
         {
             DataContext = new SettingsMod();
-        }
-
-        
+        }        
     }
-}  /*   private void ClearFields()
-        {
-            TbFirstName.Text = "";
-            TbLastName.Text = "";
-                
-        }
-        private void btnAddContact_Click(object sender, RoutedEventArgs e)
-        {
-            var contact = new Contact(TbFirstName.Text, TbLastName.Text);
-            try
-            {
-                lbContactList.Items.Add(contact.FullName);
-            }
-            catch{ }
-            finally // ska använda funk. ClearFields
-            {
-                ClearFields();
-            }
-        }
-        private void btnRemove_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                lbContactList.Items.Remove(lbContactList.Items[lbContactList.SelectedIndex]);
-                // lbContactList.SelectedIndex kan välja själv vad ska jag ta bort 
-            }
-            catch { }
-        }        */
+} 
